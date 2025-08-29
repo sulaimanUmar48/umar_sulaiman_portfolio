@@ -1,0 +1,19 @@
+.inverted-border::before, .inverted-border::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    /* background-color: blue; */
+    position: absolute;
+    border-bottom-right-radius: 20px;
+      
+}
+
+.inverted-border::before{
+    top: -20px;
+    right: 0.5px; 
+}
+
+.inverted-border::after{
+    bottom: 0;
+    left: -20px;
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import "tailwindcss";
+
+/* @font-face {
+    font-family: ;
+    src: url();
+} */
+
+
+@theme{
+    --color-primary: #FFFFFC;
+    --color-secondary: #F0F0F0;
+    --color-accent-one: #FF3F00;
+    --color-accent-two: #FF7F11;
+    --color-accent-three: #BEB7A4;
+    --color-text-primary: #000000;
+    --font-nunito: "Nunito", sans-serif;
+    --font-inter:  "Inter", sans-serif;
+}
+
+@layer components{
+    .header-btn-active{
+        top: 10px;
+    }
+
+    .header-btn-inactive{
+        top: 300px;
+        background-color: red;
+    }
+}
