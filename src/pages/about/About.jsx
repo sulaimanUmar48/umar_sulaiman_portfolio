@@ -47,7 +47,7 @@ const About = () => {
                 </div>
             </div>
         </section>
-        <section className="p-[40px] pb-[80px] border-1 max-sm:mt-10 ">
+        <section className="p-[40px] pb-[80px] max-sm:mt-10 ">
             <h2 className="font-nunito text-2xl font-semibold relative w-fit">
                 Learn more about <span className="text-accent-one">My Tools</span>
                 <img src={toolsHighlighter} className="absolute right-0 w-30"/>
@@ -80,9 +80,6 @@ const About = () => {
                     )
                 })}
             </div>
-        </section>
-        <section>
-            <p className="p-[40px] text-center text-2xl font-nunito text-accent-one font-semibold">WORK EXPERIENCE</p>
         </section>
     </main>
   )
