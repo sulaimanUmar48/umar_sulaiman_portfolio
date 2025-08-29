@@ -58,11 +58,11 @@ const Home = () => {
 
     // Function for display featured carasoul = PREV
     function prevImage(){
-        setCurrentProject(prev => prev === 0 ? images.length - 1 : prev - 1)
+        setCurrentProject(prev => prev === 0 ? projects.length - 1 : prev - 1)
     }
     // carasoul function = NEXT
     function nextImage(){
-        setCurrentProject(prev => prev === images.length - 1 ? 0 : prev + 1)
+        setCurrentProject(prev => prev === projects.length - 1 ? 0 : prev + 1)
     }
 
 
