@@ -47,7 +47,7 @@ const Contact = () => {
                 >
                 </textarea>
                 <input type="hidden" name="_captcha" value="false"/>
-                <input type="hidden" name="_next" value="http://localhost:5800/thank_you"/>
+                <input type="hidden" name="_next" value={import.meta.env.PROD ? `https://umar-sulaiman-portfolio.vercel.app/thank_you` : `http://localhost:5800/thank_you` }/>
                 <input type="hidden" name="_subject" value={`New Message - %${name}% - %${date}%`}/>
                 <button className='text-xs px-7 py-3 w-fit bg-accent-two rounded font-semibold text-white active:accent-accent-one cursor-pointer'>SEND MESSAGE</button>
             </form>
